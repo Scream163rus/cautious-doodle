@@ -17,7 +17,7 @@
 </div>
 <div class="container mt-5">
     <h1>Сайт объявлений</h1>
-    <div th:each="el : ${ad}" class="alert alert-info mt-2">
+    <div th:each="el : ${ad.get()}" class="alert alert-info mt-2">
         <h3 th:text="${el.title}"/>
         <p th:text="${'Категория:' + ' ' + el.category}"/>
         <p th:text="${'Описание:' + ' ' + el.descriptions}"/>
